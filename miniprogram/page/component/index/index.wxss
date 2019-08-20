@@ -1,0 +1,115 @@
+.btn_pay {
+  margin: 100rpx auto;
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+  background-color: #d3a95a;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+/* 支付密码css start */
+/*用空的view组件铺满屏幕用来定义z-index的大小，方便下一个组件覆盖*/
+.bg_layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9997;
+}
+.input_main {
+  position: fixed;
+  z-index: 9998;/*组件覆盖，通过设置z-index属性来控制组件显示层级，数值越高就离用户越近，必须和position搭配使用*/
+  left: 0;
+  bottom: 500rpx;
+  width: 100%;
+  height: 394rpx;
+  background-color: #fff;
+}
+
+.input_title {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;/*定义元素里面文本的高度*/
+  text-align: center;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.input_back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_back text {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: white;
+  border: 1rpx solid #aaa;
+  border-width: 5rpx 0 0 5rpx;/**/
+  transform: rotate(-45deg);/*transform: rotate(45deg);共一个参数“角度”，单位deg为度的意思，正数为顺时针旋转，负数为逆时针旋转，上述代码作用是顺时针旋转45度。*/
+}
+
+.input_tip {
+  margin: 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #888;
+}
+
+/* 密码掩码模拟 */
+
+.input_row {
+  width: 690rpx;
+  margin: 0 auto;
+  height: 98rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #e2e2e2;
+  border-radius: 20rpx;
+}
+
+.input_row .pwd_item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 1rpx solid #e2e2e2;
+  position: relative;
+}
+.pwd_item text {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  background-color: #555;
+}
+
+.forget_pwd {
+  float: right;
+  margin: 30rpx;
+  width: 100rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #ff7800;
+}
+
+/* 文本输入框位置: 设置到左边隐藏 */
+
+.input_control {
+  position: relative;
+  left: -300rpx;
+  bottom: 0;
+  width: 100rpx;
+  height: 100rpx;
+}

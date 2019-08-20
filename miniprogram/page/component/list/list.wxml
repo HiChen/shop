@@ -1,0 +1,20 @@
+<view class="main">
+    <view class="banner">
+        <image src="/image/jingxuan4.jpg"></image>
+    </view>
+
+    <view class="newest-box">
+       <block wx:for="{{new_product}}" wx:item="item" wx:key="index">
+        <view class="newest-list" bindtap='cart' data-url="{{item.url}}">
+            <image src="{{item.url}}"></image>
+            <view class="newest-text1 ">
+              <text>{{item.name}}</text>
+            </view>
+            <view class="newest-text ">
+              <text>¥ {{item.price}}</text>
+              <text class='newest-text-child'>2122人付款</text>
+            </view>
+        </view>
+      </block>
+    </view>
+</view>

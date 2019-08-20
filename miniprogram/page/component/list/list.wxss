@@ -1,0 +1,47 @@
+@import '../../common/common.wxss';
+
+.banner image{
+    width: 100%;
+    height: 400rpx;
+}
+
+.newest-box{
+    padding:0 40rpx;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    width: 325rpx;
+    height: 580rpx;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 10px;
+    text-align: center; /*图片和文字居中 */
+    background: white;
+}
+.newest-box .newest-list:nth-child(2n){
+    margin-right: 0;
+}
+.newest-box .newest-list image{
+    width: 325rpx;
+    height: 400rpx;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    margin: 0;
+}
+.newest-text-child{
+  opacity: 0.5;
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: black;
+}
+.newest-box .newest-list .newest-text{
+    display:flex; 
+    font-size: 30rpx;
+    color: #e6343a;
+    padding-top:30rpx; 
+
+}
+.newest-box .newest-list .newest-text1{
+    font-size: 32rpx;
+}
