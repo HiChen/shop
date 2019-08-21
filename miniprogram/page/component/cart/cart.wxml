@@ -17,7 +17,7 @@
               <image src='/image/cha.png' catchtap='cha'></image>
             </view> -->
             <view class='cart-list2_next'>{{item.name}}</view>
-            <view class='cart-list2_next1' catchtap='xiugai_ms' data-index="{{index}}" data-value="{{item.seleted_norms}}">
+            <view class='cart-list2_next1' catchtap='xiugai_ms' data-index="{{index}}" data-value="{{item}}">
               <text>{{item.seleted_norms}}</text>
               <view class='null_view'></view>
             </view>
@@ -38,7 +38,7 @@
           <view class='saleNum1'>¥{{filter.tofix(item.ago_price*item.sale)}}</view>
         </block>
         <block wx:else>
-        <view class='saleNum'>¥{{filter.tofix(item.ago_price*item.sale)}}</view>
+          <view class='saleNum'>¥{{filter.tofix(item.ago_price*item.sale)}}</view>
         </block>
         <view class='numCount'>
           <view class='numreduce' bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</view>
@@ -50,20 +50,20 @@
         <view class='bg_layer'></view>
         <view class='input_main'>
           <view class='norms_top'>
-            <image class='url' src='{{item.url}}'></image>
+            <image class='url' src='{{seleted_norms.url}}'></image>
             <view class='norms-right'>
               <view class='cha'>
                 <image src='/image/cha.png' catchtap='cha'></image>
               </view>
-              <view class='norms-right_price'>¥{{item.ago_price}}</view>
+              <view class='norms-right_price'>¥{{seleted_norms.ago_price}}</view>
               <view class='norms-right_kucun'>库存3354件</view>
               <view class='norms-right_norm'>选择 规格分类</view>
             </view>
           </view>
           <scroll-view scroll-y="true" style='height:460rpx;background-color:#f2f2f2'>
             <view class='norms_type'>规格分类</view>
-            <block wx:for="{{item.goods_norms}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
-              <view class="norms {{seleted_norms===item?'on':''}}" catchtap='seleted_norms' data-seleted_norms="{{item}}">{{item}}</view>
+            <block wx:for="{{seleted_norms.goods_norms}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+              <view class="norms {{xiugaiseleted_norms===item?'on':''}}" catchtap='seleted_norms' data-seleted_norms="{{item}}">{{item}}</view>
             </block>
           </scroll-view>
           <button class='addCarts' bindtap='addCarts'>完成</button>
@@ -74,8 +74,8 @@
   </view>
   <view wx:else>
     <view class='carts_null'>
-    <image src='/image/gouwuche3.png'></image>
-    <view class="cart-no-data">购物车是空的哦~</view>
+      <image src='/image/gouwuche3.png'></image>
+      <view class="cart-no-data">购物车是空的哦~</view>
     </view>
   </view>
 </scroll-view>

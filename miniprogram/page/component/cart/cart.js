@@ -14,6 +14,7 @@ Page({
     windosHeight: '',
     manage: false,
     seleted_norms:'',
+    xiugaiseleted_norms: '',
     openid:'',
     sale:'',
     carts_null:false,
@@ -21,7 +22,7 @@ Page({
   //获取选择的规格
   seleted_norms: function (e) {
     this.setData({
-      seleted_norms: e.currentTarget.dataset.seleted_norms,
+      xiugaiseleted_norms: e.currentTarget.dataset.seleted_norms,
     })
   },
   //管理购物车
@@ -101,6 +102,7 @@ Page({
   //显示“修改购物车宝贝的参数”
   xiugai_ms(e) {
     console.log(e.currentTarget.dataset.index)
+    console.log(e.currentTarget.dataset.value)
     this.setData({
       showseleted_norms: true,
       seleted_norms:e.currentTarget.dataset.value,
@@ -112,7 +114,7 @@ Page({
     var carts=this.data.carts;
     var that=this;
     var index=this.data.index;
-    carts[index].seleted_norms=this.data.seleted_norms;
+    carts[index].seleted_norms = this.data.xiugaiseleted_norms;
     const db=wx.cloud.database();
     db.collection("shopping_cart").doc(carts[index]._id).update({
       data:{
