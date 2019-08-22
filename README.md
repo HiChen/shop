@@ -41,3 +41,10 @@
 ![出售商品](https://img-blog.csdnimg.cn/20190821192646885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
 ### 6.3订单管理和修改商品
 ![订单管理](https://img-blog.csdnimg.cn/20190821192813631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
+# 部署方法
+1.`clone`项目到本地`https://github.com/weilang1212/shop.git`  
+2.在`shop/cloudfunctions/`目录下 每个文件夹都需要安装一次依赖,具体安装方法[wx-server-sdk依赖安装](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/wx-server-sdk.html) 安装成功后每个文件夹或多 `node_modules`这个文件夹  
+3.此时程序能够`run`起来，然后修改`user.wxml`页面的_openid(前提先注册，才知道自己_openid),然后进入管理员页面，发布商品，发布完成后可以查看`云开发控制台`查看图片路径，最后在`index.js`中修改 `imgUrls`里面的值（原因是手动设置主页滑动商品图片）。
+# 教程
+ 我在csdn中描述一些关于云开发中一些容易犯错的点[点击进入](https://blog.csdn.net/qq_38109594/article/details/99978597)
+ # 其它资料
