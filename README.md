@@ -27,7 +27,6 @@
 可查看物流信息、订单详情、修改地址、删除订单  
   
 ![个人中心](https://img-blog.csdnimg.cn/20190821192026120.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
-![订单详情](https://img-blog.csdnimg.cn/20190821192034591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
 ## 6、管理员
 ### 6.1管理员首页
 前提是把自己_openid修改成自己的，可根据自己需求添加管理员。  
