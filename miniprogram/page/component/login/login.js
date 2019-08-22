@@ -159,17 +159,13 @@ Page({
                  })
                 }, 3000)
               }, 2000)
-              // that.setData({
-              //   currentTab: 0,
-              // })
             })
           }
         },
         complete(res) {
-          console.log(res + '11111')
+          console.log(res)
         }
       })
-      console.log('222222')
     }
   },
   //注册要求,满足要求即可注册
@@ -297,9 +293,6 @@ Page({
       _this.setData({
         code: 123456
       })
-      // zhenzisms.client.init('https://sms_developer.zhenzikj.com', '100495', 'OTM2ZjM0NzItNWJmMC00MDMyLTk2NWYtODIxMmUzZWU1NGZj');
-      // zhenzisms.client.send(function(res) {
-      // if (_this.data.code == 0) {
           var num = 60;
           var timer = setInterval(function() {
             num--;
@@ -317,14 +310,6 @@ Page({
             }
           }, 1000)
           return true;
-        // }
-        // wx.showToast({
-        //   title: "请输入验证码",
-        //   icon: 'none',
-        //   duration: 2000
-        // })
-      // }, _this.data.registerNum, '一木瑜伽注册验证码:' + _this.data.code + ",若已经注册,请忽略本条信息");
-
     }
 
   },
