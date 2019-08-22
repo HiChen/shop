@@ -4,7 +4,7 @@
 # 前言
 这是接触第一个小程序开发项目，也是第一个云开发的项目，虽然在开发过程中遇到许多的坑，但还是一步一步走过来了，尤其是一些功能的实现，真的是绞尽脑汁，打代码的路上，总要有些坑才能让自己变得强大。
   
-由于经验尚缺，项目中难免有许多平不足之处，希望路过的大神能够帮忙指出。
+由于经验尚缺，项目中难免有许多不足之处，希望路过的大神能够帮忙指出。
 # 一、整体效果
 ## 1、登陆页面：  
 为什么小程序还需要登陆页面，直接微信授权不就完了吗？这里我总结的两点：  
@@ -13,7 +13,7 @@
 ![登陆页面](https://img-blog.csdnimg.cn/20190822092326925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
 ## 2、首页
 显示主页面整体的效果  
-![首页](https://img-blog.csdnimg.cn/20190821182535783.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
+![首页](https://img-blog.csdnimg.cn/20190822191011516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
 ## 3、商品详情页
 作为核心的展示页面、包括商品参数、服务、规格类型、相关参数、售后保障以及可加入购物车或者立即购买等功能；  
   
@@ -42,6 +42,3 @@
 ![出售商品](https://img-blog.csdnimg.cn/20190821192646885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
 ### 6.3订单管理和修改商品
 ![订单管理](https://img-blog.csdnimg.cn/20190821192813631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
-![商品修改](https://img-blog.csdnimg.cn/20190821192714186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4MTA5NTk0,size_16,color_FFFFFF,t_70)
-
-
