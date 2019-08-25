@@ -1,4 +1,3 @@
-var zhenzisms = require('../login/zhenzisms.js');
 const app = getApp();
 Page({
   data: {
